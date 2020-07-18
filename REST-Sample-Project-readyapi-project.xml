@@ -1,0 +1,1860 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="333b3b92-bc99-4628-afcb-90672b2992ea" created="2.7.0" activeEnvironment="Default environment" name="REST Sample Project" resourceRoot="" updated="2.8.0 2019-04-30T17:12:05Z" encryptionMode="Not encrypted" xmlns:con="http://eviware.com/soapui/config">
+  <con:description>Sample Projects bases on a virtualized REST service. Please make sure that port 8084 is available on your local machine or you can update the virtual API under the serviceV tool to reflect an open port on your system. You will also have to update the ports on the tests to reflect
+the same ports on the virtual service.</con:description>
+  <con:settings/>
+  <con:interface xsi:type="con:RestService" id="e5d8bd5a-d8eb-4541-bc6d-b4901a1faebb" wadlVersion="http://wadl.dev.java.net/2009/02" name="Ecommerce" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings>
+      <con:setting id="8b4877da-9c17-4d74-baf9-2881747b6a79fileName">http%3A%2F%2Flocalhost%3A8084</con:setting>
+    </con:settings>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints>
+      <con:endpoint>http://localhost:8084</con:endpoint>
+    </con:endpoints>
+    <con:environmentSpec>
+      <con:entry environmentId="834e9f34-445a-4d32-b042-ef79046664e3">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+      <con:entry environmentId="19b3aa32-a1f5-474e-bd47-6ecf34074e03">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+      <con:entry environmentId="8adf9beb-0001-459f-b854-d8161046b013">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+      <con:entry environmentId="85fcf76d-cc70-4a0b-a2f6-7b043cf8233a">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+      <con:entry environmentId="aaa8e0b8-c982-402f-aabc-53999ad72736">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+      <con:entry environmentId="613bb63e-dfae-4525-8f53-7cc0745a1be1">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+      <con:entry environmentId="c7173b3a-fee4-45c8-906c-55deaef4eb0d">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+    <con:resource name="Login" path="/login/" id="ed379f4d-79f8-49ce-af8a-3340334b1790">
+      <con:settings>
+        <con:setting id="ff930a3e-8923-4842-9db0-3e7356e664f9fileName">Login</con:setting>
+      </con:settings>
+      <con:parameters>
+        <con:parameter>
+          <con:name>username</con:name>
+          <con:value/>
+          <con:style>QUERY</con:style>
+          <con:default/>
+          <con:path xsi:nil="true"/>
+          <con:description xsi:nil="true"/>
+        </con:parameter>
+        <con:parameter>
+          <con:name>password</con:name>
+          <con:value/>
+          <con:style>QUERY</con:style>
+          <con:default/>
+          <con:path xsi:nil="true"/>
+          <con:description xsi:nil="true"/>
+        </con:parameter>
+      </con:parameters>
+      <con:method name="Login" id="8a2a74c2-299c-4af4-9ce4-548941aa6e5d" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>500 405</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>500</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>500</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>500</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>500</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>500</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>500</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>500</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>500</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>500</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>500</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>500</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>500</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>500</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>500</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>500</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>500</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>401</con:status>
+          <con:params/>
+          <con:element xmlns:log="http://localhost/login">log:Fault</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:log="http://localhost/login">log:Response</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>404</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>404</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>405</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="af9f46ad-d5ad-4c3c-bcde-e2f266c3dc2c" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Accept" value="application/json" xmlns="http://eviware.com/soapui/config"/></con:setting>
+          </con:settings>
+          <con:endpoint>http://localhost:8084</con:endpoint>
+          <con:request>{"sample" : "1 "}</con:request>
+          <con:originalUri>http://localhost/login</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters>
+            <con:entry key="password" value="Login123"/>
+            <con:entry key="username" value="Login"/>
+          </con:parameters>
+          <con:parameterOrder>
+            <con:entry>username</con:entry>
+            <con:entry>password</con:entry>
+          </con:parameterOrder>
+          <con:environmentSpec>
+            <con:entry environmentId="f27a7295-1f08-4642-a3be-7ae9878517f0">
+              <con:authProfile>No Authorization</con:authProfile>
+            </con:entry>
+            <con:entry environmentId="712e7e53-7afa-4695-8bf2-bc7b9af8c08a">
+              <con:authProfile>No Authorization</con:authProfile>
+            </con:entry>
+            <con:entry environmentId="834e9f34-445a-4d32-b042-ef79046664e3">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
+            <con:entry environmentId="19b3aa32-a1f5-474e-bd47-6ecf34074e03">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
+            <con:entry environmentId="8adf9beb-0001-459f-b854-d8161046b013">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
+            <con:entry environmentId="85fcf76d-cc70-4a0b-a2f6-7b043cf8233a">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
+            <con:entry environmentId="aaa8e0b8-c982-402f-aabc-53999ad72736">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
+            <con:entry environmentId="613bb63e-dfae-4525-8f53-7cc0745a1be1">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
+            <con:entry environmentId="c7173b3a-fee4-45c8-906c-55deaef4eb0d">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
+          </con:environmentSpec>
+        </con:request>
+        <con:environmentSpec>
+          <con:entry environmentId="834e9f34-445a-4d32-b042-ef79046664e3">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="19b3aa32-a1f5-474e-bd47-6ecf34074e03">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="8adf9beb-0001-459f-b854-d8161046b013">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="85fcf76d-cc70-4a0b-a2f6-7b043cf8233a">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="aaa8e0b8-c982-402f-aabc-53999ad72736">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="613bb63e-dfae-4525-8f53-7cc0745a1be1">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="c7173b3a-fee4-45c8-906c-55deaef4eb0d">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:method>
+      <con:environmentSpec>
+        <con:entry environmentId="834e9f34-445a-4d32-b042-ef79046664e3">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="19b3aa32-a1f5-474e-bd47-6ecf34074e03">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="8adf9beb-0001-459f-b854-d8161046b013">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="85fcf76d-cc70-4a0b-a2f6-7b043cf8233a">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="aaa8e0b8-c982-402f-aabc-53999ad72736">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="613bb63e-dfae-4525-8f53-7cc0745a1be1">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="c7173b3a-fee4-45c8-906c-55deaef4eb0d">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:resource>
+    <con:resource name="buy" path="/buy" id="75364f33-cf4b-4a2b-b339-32f81cd19471">
+      <con:settings>
+        <con:setting id="d2e78192-32e5-44ea-b917-4dccd7c6470bfileName">buy</con:setting>
+      </con:settings>
+      <con:parameters>
+        <con:parameter>
+          <con:name>sessionid</con:name>
+          <con:value/>
+          <con:style>QUERY</con:style>
+          <con:default/>
+        </con:parameter>
+        <con:parameter>
+          <con:name>buystring</con:name>
+          <con:value/>
+          <con:style>QUERY</con:style>
+          <con:default/>
+        </con:parameter>
+      </con:parameters>
+      <con:method name="Method 1" id="912196f2-5bd1-4263-af0e-9382ebdf8587" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>405</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:buy="http://localhost/buy">buy:Response</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="b797c37e-2328-43f9-b0d6-f1d993c8419f" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://localhost:8084</con:endpoint>
+          <con:request/>
+          <con:originalUri>http://localhost/buy</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters>
+            <entry key="buystring" value="Item 1" xmlns="http://eviware.com/soapui/config"/>
+          </con:parameters>
+          <con:environmentSpec>
+            <con:entry environmentId="f27a7295-1f08-4642-a3be-7ae9878517f0">
+              <con:authProfile>No Authorization</con:authProfile>
+            </con:entry>
+            <con:entry environmentId="712e7e53-7afa-4695-8bf2-bc7b9af8c08a">
+              <con:authProfile>No Authorization</con:authProfile>
+            </con:entry>
+            <con:entry environmentId="834e9f34-445a-4d32-b042-ef79046664e3">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
+            <con:entry environmentId="19b3aa32-a1f5-474e-bd47-6ecf34074e03">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
+            <con:entry environmentId="8adf9beb-0001-459f-b854-d8161046b013">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
+            <con:entry environmentId="85fcf76d-cc70-4a0b-a2f6-7b043cf8233a">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
+            <con:entry environmentId="aaa8e0b8-c982-402f-aabc-53999ad72736">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
+            <con:entry environmentId="613bb63e-dfae-4525-8f53-7cc0745a1be1">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
+            <con:entry environmentId="c7173b3a-fee4-45c8-906c-55deaef4eb0d">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
+          </con:environmentSpec>
+        </con:request>
+        <con:environmentSpec>
+          <con:entry environmentId="834e9f34-445a-4d32-b042-ef79046664e3">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="19b3aa32-a1f5-474e-bd47-6ecf34074e03">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="8adf9beb-0001-459f-b854-d8161046b013">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="85fcf76d-cc70-4a0b-a2f6-7b043cf8233a">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="aaa8e0b8-c982-402f-aabc-53999ad72736">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="613bb63e-dfae-4525-8f53-7cc0745a1be1">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="c7173b3a-fee4-45c8-906c-55deaef4eb0d">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:method>
+      <con:environmentSpec>
+        <con:entry environmentId="834e9f34-445a-4d32-b042-ef79046664e3">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="19b3aa32-a1f5-474e-bd47-6ecf34074e03">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="8adf9beb-0001-459f-b854-d8161046b013">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="85fcf76d-cc70-4a0b-a2f6-7b043cf8233a">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="aaa8e0b8-c982-402f-aabc-53999ad72736">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="613bb63e-dfae-4525-8f53-7cc0745a1be1">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="c7173b3a-fee4-45c8-906c-55deaef4eb0d">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:resource>
+    <con:resource name="logout" path="/logout" id="31c45939-b06e-4b4c-a54f-d82acdc0f5c4">
+      <con:settings>
+        <con:setting id="52f3bdd1-87fc-4ac1-b036-a674cf307ba7fileName">logout</con:setting>
+      </con:settings>
+      <con:parameters>
+        <con:parameter>
+          <con:name>sessionid</con:name>
+          <con:value/>
+          <con:style>QUERY</con:style>
+          <con:default/>
+          <con:description xsi:nil="true"/>
+        </con:parameter>
+      </con:parameters>
+      <con:method name="Method 1" id="4e53d82e-1d34-4ed3-995c-9238b982eda7" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="FAULT">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>500</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>500</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>500</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>500</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType>application/xml</con:mediaType>
+          <con:status>404</con:status>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:log="http://localhost/logout">log:Response</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>404</con:status>
+          <con:params/>
+          <con:element xmlns:log="http://localhost/logout">log:Fault</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="05080aa5-8817-44ff-ad88-cf8aec040aef" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Accept" value="application/json" xmlns="http://eviware.com/soapui/config"/></con:setting>
+          </con:settings>
+          <con:endpoint>http://localhost:8084</con:endpoint>
+          <con:request/>
+          <con:originalUri>http://localhost/logout</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters/>
+          <con:parameterOrder>
+            <con:entry>sessionid</con:entry>
+          </con:parameterOrder>
+          <con:environmentSpec>
+            <con:entry environmentId="f27a7295-1f08-4642-a3be-7ae9878517f0">
+              <con:authProfile>No Authorization</con:authProfile>
+            </con:entry>
+            <con:entry environmentId="712e7e53-7afa-4695-8bf2-bc7b9af8c08a">
+              <con:authProfile>No Authorization</con:authProfile>
+            </con:entry>
+            <con:entry environmentId="834e9f34-445a-4d32-b042-ef79046664e3">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
+            <con:entry environmentId="19b3aa32-a1f5-474e-bd47-6ecf34074e03">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
+            <con:entry environmentId="8adf9beb-0001-459f-b854-d8161046b013">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
+            <con:entry environmentId="85fcf76d-cc70-4a0b-a2f6-7b043cf8233a">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
+            <con:entry environmentId="aaa8e0b8-c982-402f-aabc-53999ad72736">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
+            <con:entry environmentId="613bb63e-dfae-4525-8f53-7cc0745a1be1">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
+            <con:entry environmentId="c7173b3a-fee4-45c8-906c-55deaef4eb0d">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
+          </con:environmentSpec>
+        </con:request>
+        <con:environmentSpec>
+          <con:entry environmentId="834e9f34-445a-4d32-b042-ef79046664e3">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="19b3aa32-a1f5-474e-bd47-6ecf34074e03">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="8adf9beb-0001-459f-b854-d8161046b013">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="85fcf76d-cc70-4a0b-a2f6-7b043cf8233a">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="aaa8e0b8-c982-402f-aabc-53999ad72736">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="613bb63e-dfae-4525-8f53-7cc0745a1be1">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="c7173b3a-fee4-45c8-906c-55deaef4eb0d">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:method>
+      <con:environmentSpec>
+        <con:entry environmentId="834e9f34-445a-4d32-b042-ef79046664e3">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="19b3aa32-a1f5-474e-bd47-6ecf34074e03">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="8adf9beb-0001-459f-b854-d8161046b013">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="85fcf76d-cc70-4a0b-a2f6-7b043cf8233a">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="aaa8e0b8-c982-402f-aabc-53999ad72736">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="613bb63e-dfae-4525-8f53-7cc0745a1be1">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="c7173b3a-fee4-45c8-906c-55deaef4eb0d">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:resource>
+    <con:resource name="search" path="/search" id="c7e8a04a-0e4f-4b2c-b9af-5141a5175ed5">
+      <con:settings>
+        <con:setting id="973a761d-2b4b-4b5b-9736-1d7d78ec9af3fileName">search</con:setting>
+      </con:settings>
+      <con:parameters>
+        <con:parameter>
+          <con:name>sessionid</con:name>
+          <con:value/>
+          <con:style>QUERY</con:style>
+          <con:default/>
+        </con:parameter>
+        <con:parameter>
+          <con:name>searchstring</con:name>
+          <con:value/>
+          <con:style>QUERY</con:style>
+          <con:default/>
+        </con:parameter>
+      </con:parameters>
+      <con:method name="Method 1" id="163c4a81-5b14-4906-bb35-f36d83eea2b6" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/xml</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:sear="http://localhost/search">sear:Response</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="21ae0292-5321-42ce-b85e-257fe3d8c656" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://localhost:8084</con:endpoint>
+          <con:request/>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters>
+            <entry key="searchstring" value="Item 1" xmlns="http://eviware.com/soapui/config"/>
+          </con:parameters>
+          <con:parameterOrder>
+            <con:entry>sessionid</con:entry>
+            <con:entry>searchstring</con:entry>
+          </con:parameterOrder>
+          <con:environmentSpec>
+            <con:entry environmentId="f27a7295-1f08-4642-a3be-7ae9878517f0">
+              <con:authProfile>No Authorization</con:authProfile>
+            </con:entry>
+            <con:entry environmentId="712e7e53-7afa-4695-8bf2-bc7b9af8c08a">
+              <con:authProfile>No Authorization</con:authProfile>
+            </con:entry>
+            <con:entry environmentId="834e9f34-445a-4d32-b042-ef79046664e3">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
+            <con:entry environmentId="19b3aa32-a1f5-474e-bd47-6ecf34074e03">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
+            <con:entry environmentId="8adf9beb-0001-459f-b854-d8161046b013">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
+            <con:entry environmentId="85fcf76d-cc70-4a0b-a2f6-7b043cf8233a">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
+            <con:entry environmentId="aaa8e0b8-c982-402f-aabc-53999ad72736">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
+            <con:entry environmentId="613bb63e-dfae-4525-8f53-7cc0745a1be1">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
+            <con:entry environmentId="c7173b3a-fee4-45c8-906c-55deaef4eb0d">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
+          </con:environmentSpec>
+        </con:request>
+        <con:environmentSpec>
+          <con:entry environmentId="834e9f34-445a-4d32-b042-ef79046664e3">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="19b3aa32-a1f5-474e-bd47-6ecf34074e03">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="8adf9beb-0001-459f-b854-d8161046b013">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="85fcf76d-cc70-4a0b-a2f6-7b043cf8233a">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="aaa8e0b8-c982-402f-aabc-53999ad72736">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="613bb63e-dfae-4525-8f53-7cc0745a1be1">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="c7173b3a-fee4-45c8-906c-55deaef4eb0d">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:method>
+      <con:environmentSpec>
+        <con:entry environmentId="834e9f34-445a-4d32-b042-ef79046664e3">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="19b3aa32-a1f5-474e-bd47-6ecf34074e03">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="8adf9beb-0001-459f-b854-d8161046b013">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="85fcf76d-cc70-4a0b-a2f6-7b043cf8233a">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="aaa8e0b8-c982-402f-aabc-53999ad72736">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="613bb63e-dfae-4525-8f53-7cc0745a1be1">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="c7173b3a-fee4-45c8-906c-55deaef4eb0d">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:resource>
+  </con:interface>
+  <con:testSuite id="d4b194ea-9025-4d1a-bf69-3e4acd860e62" name="Sample REST TestSuite">
+    <con:settings/>
+    <con:savedRecentRuns>1</con:savedRecentRuns>
+    <con:runType>SEQUENTIAL</con:runType>
+    <con:testCase id="c3fbf613-f789-4fe0-a4e5-1757eba3ccc2" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Simple Login Call" searchProperties="true" timeout="0">
+      <con:description>Simple test can be used to show how easy it is to call a simple REST Service. You can have one or multiple REST endpoints that are not related to each other. This is commonly used when running integration tests.
+
+Steps:
+First step turns on Virtual REST Service
+Second step makes the Login call to the virtual Service and validates that you get a "200 OK" status code
+Third Step turns off the virtual REST Service
+
+
+NOTE: If you would like to run the Login step without as a standalone step please turn on the virtual service under the ServiceV Tool</con:description>
+      <con:settings/>
+      <con:savedRecentRuns>1</con:savedRecentRuns>
+      <con:testStep type="VirtRunnerTestStep" name="StartService" id="49e7dd6f-1ad0-4104-8d0a-2bc166ee29e4">
+        <con:settings/>
+        <con:config>
+          <url>localhost</url>
+          <server>EcommerceVirt</server>
+          <action>run</action>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="Login" id="8c4c6e50-238e-4476-80dc-15d7b89fff4f">
+        <con:settings/>
+        <con:config service="Ecommerce" resourcePath="/login/" methodName="Login" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Login" id="af9f46ad-d5ad-4c3c-bcde-e2f266c3dc2c" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Accept" value="application/json" xmlns="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>http://localhost:8084</con:endpoint>
+            <con:request>{"sample" : "1 "}</con:request>
+            <con:originalUri>http://localhost/login</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="54943923-c5d6-4a3d-a176-a7a20d56b664" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters>
+              <con:entry key="password" value="Login123"/>
+              <con:entry key="username" value="Login"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>username</con:entry>
+              <con:entry>password</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f27a7295-1f08-4642-a3be-7ae9878517f0">
+                <con:authProfile>No Authorization</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="712e7e53-7afa-4695-8bf2-bc7b9af8c08a">
+                <con:authProfile>No Authorization</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="834e9f34-445a-4d32-b042-ef79046664e3">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="19b3aa32-a1f5-474e-bd47-6ecf34074e03">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="8adf9beb-0001-459f-b854-d8161046b013">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="85fcf76d-cc70-4a0b-a2f6-7b043cf8233a">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="aaa8e0b8-c982-402f-aabc-53999ad72736">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="613bb63e-dfae-4525-8f53-7cc0745a1be1">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="c7173b3a-fee4-45c8-906c-55deaef4eb0d">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="VirtRunnerTestStep" name="StopService" id="e7ca5e17-6eda-4ec7-9628-3cc48017145d">
+        <con:settings/>
+        <con:config>
+          <url>localhost</url>
+          <server>EcommerceVirt</server>
+          <action>stop</action>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+      <con:breakPoints>
+        <con:testStepId>49e7dd6f-1ad0-4104-8d0a-2bc166ee29e4</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+    </con:testCase>
+    <con:testCase id="144505c6-b03d-43d1-8f24-71eb41db11e3" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Integration Test" searchProperties="true" timeout="0">
+      <con:description>Integration tests are supposed to show how APIs work in a real world scenarios, integrating APIs together as a user would use an application in a workflow. In the following example we Login, Search for an Item, Buy the Item and then logout. We have strung these steps together
+with some of the tools easy to use feature (GET DATA: See Documentation) which allows you to easily pass values from a response to the next request.
+
+Steps:
+First step turns on Virtual REST Service
+Second step makes the Login call to the virtual Service and validates that it contains a "session id" json element in the response
+Third step picks up the session id that was generated in the first step and searches for an Item ID. The response is also validated for a "200 OK" Status code
+Fourth step picks up the session id from the second step and the item from the third step's response. We validate the response to match the item that was searched for on the third step.
+Fifth Step turns off the virtual REST Service
+
+NOTE: If you would like to run the Login step without as a standalone step please turn on the virtual service under the ServiceV Tool</con:description>
+      <con:settings/>
+      <con:savedRecentRuns>1</con:savedRecentRuns>
+      <con:testStep type="VirtRunnerTestStep" name="StartService" id="48307fa4-2bf6-4550-8266-238bd4e03e1c">
+        <con:settings/>
+        <con:config>
+          <url>localhost</url>
+          <server>EcommerceVirt</server>
+          <action>run</action>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="Login" id="d669030a-5e8c-4cf7-badd-9e8ae282be4b">
+        <con:settings/>
+        <con:config service="Ecommerce" resourcePath="/login/" methodName="Login" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Login" id="af9f46ad-d5ad-4c3c-bcde-e2f266c3dc2c" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Accept" value="application/json" xmlns="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>http://localhost:8084</con:endpoint>
+            <con:request>{"sample" : "1 "}</con:request>
+            <con:originalUri>http://localhost/login</con:originalUri>
+            <con:assertion type="JsonPath Existence Match" id="3e937dfa-57ab-441d-9527-84c33802b690" name="Check for existence of [sessionid]">
+              <con:configuration>
+                <path>$['sessionid']</path>
+                <content>true</content>
+                <allowWildcards>false</allowWildcards>
+                <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+                <ignoreComments>false</ignoreComments>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters>
+              <con:entry key="password" value="Password"/>
+              <con:entry key="username" value="Login"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>username</con:entry>
+              <con:entry>password</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f27a7295-1f08-4642-a3be-7ae9878517f0">
+                <con:authProfile>No Authorization</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="712e7e53-7afa-4695-8bf2-bc7b9af8c08a">
+                <con:authProfile>No Authorization</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="834e9f34-445a-4d32-b042-ef79046664e3">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="19b3aa32-a1f5-474e-bd47-6ecf34074e03">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="8adf9beb-0001-459f-b854-d8161046b013">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="85fcf76d-cc70-4a0b-a2f6-7b043cf8233a">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="aaa8e0b8-c982-402f-aabc-53999ad72736">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="613bb63e-dfae-4525-8f53-7cc0745a1be1">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="c7173b3a-fee4-45c8-906c-55deaef4eb0d">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="Search_Item" id="022d6c41-8d52-4cab-9f55-eb49727b9d52">
+        <con:settings/>
+        <con:config service="Ecommerce" resourcePath="/search" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Search_Item" id="21ae0292-5321-42ce-b85e-257fe3d8c656" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>http://localhost:8084</con:endpoint>
+            <con:request/>
+            <con:originalUri>http://localhost/search</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="36d1d814-2f5d-496a-a713-f00123a641fb" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="sessionid" value="${Login#Response#$['sessionid']}"/>
+              <con:entry key="searchstring" value="Item 1"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>sessionid</con:entry>
+              <con:entry>searchstring</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f27a7295-1f08-4642-a3be-7ae9878517f0">
+                <con:authProfile>No Authorization</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="712e7e53-7afa-4695-8bf2-bc7b9af8c08a">
+                <con:authProfile>No Authorization</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="834e9f34-445a-4d32-b042-ef79046664e3">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="19b3aa32-a1f5-474e-bd47-6ecf34074e03">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="8adf9beb-0001-459f-b854-d8161046b013">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="85fcf76d-cc70-4a0b-a2f6-7b043cf8233a">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="aaa8e0b8-c982-402f-aabc-53999ad72736">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="613bb63e-dfae-4525-8f53-7cc0745a1be1">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="c7173b3a-fee4-45c8-906c-55deaef4eb0d">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="Buy_Item" id="7406a0eb-e0bd-43d6-b123-be75ffdc0869">
+        <con:settings/>
+        <con:config service="Ecommerce" resourcePath="/buy" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Buy_Item" id="b797c37e-2328-43f9-b0d6-f1d993c8419f" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>http://localhost:8084</con:endpoint>
+            <con:request/>
+            <con:originalUri>http://localhost/buy</con:originalUri>
+            <con:assertion type="JsonPath Match" id="309b6c3a-d6bc-4c5b-9c6f-e93fc4a16b2f" name="Match content of [id]">
+              <con:configuration>
+                <path>$['purchasestatus']['id']</path>
+                <content>${Search_Item#Response#$['result']['item']['id']}</content>
+                <allowWildcards>false</allowWildcards>
+                <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+                <ignoreComments>false</ignoreComments>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters>
+              <con:entry key="buystring" value="${Search_Item#Response#$['result']['item']['id']}"/>
+              <con:entry key="sessionid" value="${Login#Response#$['sessionid']}"/>
+            </con:parameters>
+            <con:environmentSpec>
+              <con:entry environmentId="f27a7295-1f08-4642-a3be-7ae9878517f0">
+                <con:authProfile>No Authorization</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="712e7e53-7afa-4695-8bf2-bc7b9af8c08a">
+                <con:authProfile>No Authorization</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="834e9f34-445a-4d32-b042-ef79046664e3">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="19b3aa32-a1f5-474e-bd47-6ecf34074e03">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="8adf9beb-0001-459f-b854-d8161046b013">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="85fcf76d-cc70-4a0b-a2f6-7b043cf8233a">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="aaa8e0b8-c982-402f-aabc-53999ad72736">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="613bb63e-dfae-4525-8f53-7cc0745a1be1">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="c7173b3a-fee4-45c8-906c-55deaef4eb0d">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="Logout" id="3d09394d-f9db-48d3-aa7c-fa0869a0f163">
+        <con:settings/>
+        <con:config service="Ecommerce" resourcePath="/logout" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Logout" id="05080aa5-8817-44ff-ad88-cf8aec040aef" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Accept" value="application/json" xmlns="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>http://localhost:8084</con:endpoint>
+            <con:request/>
+            <con:originalUri>http://localhost/logout</con:originalUri>
+            <con:assertion type="JsonPath Match" id="a983a8c8-f1df-408e-be55-cc5d344ec31e" name="Match content of [Successfully logged out session]">
+              <con:configuration>
+                <path>$['Successfully logged out session']</path>
+                <content>"OK"</content>
+                <allowWildcards>false</allowWildcards>
+                <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+                <ignoreComments>false</ignoreComments>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <entry key="sessionid" value="${Login#Response#$['sessionid']}" xmlns="http://eviware.com/soapui/config"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>sessionid</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f27a7295-1f08-4642-a3be-7ae9878517f0">
+                <con:authProfile>No Authorization</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="712e7e53-7afa-4695-8bf2-bc7b9af8c08a">
+                <con:authProfile>No Authorization</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="834e9f34-445a-4d32-b042-ef79046664e3">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="19b3aa32-a1f5-474e-bd47-6ecf34074e03">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="8adf9beb-0001-459f-b854-d8161046b013">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="85fcf76d-cc70-4a0b-a2f6-7b043cf8233a">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="aaa8e0b8-c982-402f-aabc-53999ad72736">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="613bb63e-dfae-4525-8f53-7cc0745a1be1">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="c7173b3a-fee4-45c8-906c-55deaef4eb0d">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="VirtRunnerTestStep" name="StopService" id="f1f7afe2-4ce3-4c98-8560-099b92921644">
+        <con:settings/>
+        <con:config>
+          <url>localhost</url>
+          <server>EcommerceVirt</server>
+          <action>stop</action>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+      <con:breakPoints>
+        <con:testStepId>48307fa4-2bf6-4550-8266-238bd4e03e1c</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+    </con:testCase>
+    <con:testCase id="040f09d4-dbf2-4816-9383-1b0a6085e75a" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="DataDriven REST Test" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword="" zephyrTestName="" zephyrTestId="">
+      <con:description>Datadriven test help test a scenario where the same or multiple APIs need to be tested with a large amount of data inputs, it can also be used to test a large dataset of expected results through assertions. These data inputs can be picked up from a Database, Excel spread sheet
+and many other data entities.
+
+Steps:
+First step turns on Virtual REST Service
+Second step makes the Login call to the virtual Service and validates that it contains a "session id" json element in the response
+Third step picks up the session id from the second step and passes it into the request input parameters. We validate the response for "200 OK" status code.
+Fifth Step turns off the virtual REST Service
+
+NOTE: If you would like to run the Login step without as a standalone step please turn on the virtual service under the ServiceV Tool
+NOTE: Check the TestCase transaction log after the execution of the test to view every single requet and response</con:description>
+      <con:settings/>
+      <con:savedRecentRuns>1</con:savedRecentRuns>
+      <con:testStep type="VirtRunnerTestStep" name="StartService" id="3e086f11-87bf-4f31-94e7-80f81995ddc8">
+        <con:settings/>
+        <con:config>
+          <url>localhost</url>
+          <server>EcommerceVirt</server>
+          <action>run</action>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="datasource" name="DataSource" id="f0c47a2d-6317-4aff-ae84-4c4f62b41c66">
+        <con:settings/>
+        <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:dataSource type="Grid">
+            <con:configuration>
+              <check><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry></xml-fragment>]]></check>
+              <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">Temil</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Password1</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+              <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">Justin</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Password2</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+              <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">Nathan</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Password3</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+              <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">Gail</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Password4</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+              <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">Ali</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Password5</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+              <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">Darlin</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Password6</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+              <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">John</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Password7</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+              <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">Jake</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Password8</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+              <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">Roland</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Password9</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+              <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">Eddie</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Password10</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+              <recognizeAsPlainText>true</recognizeAsPlainText>
+            </con:configuration>
+          </con:dataSource>
+          <con:shared>true</con:shared>
+          <con:restartShared>true</con:restartShared>
+          <con:property>username</con:property>
+          <con:property>password</con:property>
+          <con:completeLastOperation>true</con:completeLastOperation>
+          <con:restartOnRun>true</con:restartOnRun>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="Login" id="2b02bf6d-274e-41fc-81cb-293779e06f58">
+        <con:settings/>
+        <con:config service="Ecommerce" resourcePath="/login/" methodName="Login" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Login" id="af9f46ad-d5ad-4c3c-bcde-e2f266c3dc2c" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Accept" value="application/json" xmlns="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>http://localhost:8084</con:endpoint>
+            <con:request>{"sample" : "1 "}</con:request>
+            <con:originalUri>http://localhost/login</con:originalUri>
+            <con:assertion type="JsonPath Existence Match" id="92e9bc11-3656-4d2f-aab9-0814439ec6df" name="Check for existence of [sessionid]">
+              <con:configuration>
+                <path>$['sessionid']</path>
+                <content>true</content>
+                <allowWildcards>false</allowWildcards>
+                <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+                <ignoreComments>false</ignoreComments>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters>
+              <con:entry key="password" value="${DataSource#password}"/>
+              <con:entry key="username" value="${DataSource#username}"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>username</con:entry>
+              <con:entry>password</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f27a7295-1f08-4642-a3be-7ae9878517f0">
+                <con:authProfile>No Authorization</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="712e7e53-7afa-4695-8bf2-bc7b9af8c08a">
+                <con:authProfile>No Authorization</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="834e9f34-445a-4d32-b042-ef79046664e3">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="19b3aa32-a1f5-474e-bd47-6ecf34074e03">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="8adf9beb-0001-459f-b854-d8161046b013">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="85fcf76d-cc70-4a0b-a2f6-7b043cf8233a">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="aaa8e0b8-c982-402f-aabc-53999ad72736">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="613bb63e-dfae-4525-8f53-7cc0745a1be1">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="c7173b3a-fee4-45c8-906c-55deaef4eb0d">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="Logout" id="7024fe11-6ad4-42ea-9d1d-52437f250b9e">
+        <con:settings/>
+        <con:config service="Ecommerce" resourcePath="/logout" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Logout" id="05080aa5-8817-44ff-ad88-cf8aec040aef" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Accept" value="application/json" xmlns="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>http://localhost:8084</con:endpoint>
+            <con:request/>
+            <con:originalUri>http://localhost/logout</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="669153b5-171f-40f6-8f3c-9fbb86de9c45" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <entry key="sessionid" value="${Login#Response#$['sessionid']}" xmlns="http://eviware.com/soapui/config"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>sessionid</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f27a7295-1f08-4642-a3be-7ae9878517f0">
+                <con:authProfile>No Authorization</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="712e7e53-7afa-4695-8bf2-bc7b9af8c08a">
+                <con:authProfile>No Authorization</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="834e9f34-445a-4d32-b042-ef79046664e3">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="19b3aa32-a1f5-474e-bd47-6ecf34074e03">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="8adf9beb-0001-459f-b854-d8161046b013">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="85fcf76d-cc70-4a0b-a2f6-7b043cf8233a">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="aaa8e0b8-c982-402f-aabc-53999ad72736">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="613bb63e-dfae-4525-8f53-7cc0745a1be1">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="c7173b3a-fee4-45c8-906c-55deaef4eb0d">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="datasourceloop" name="DataSource Loop" id="70cd03a4-55c6-4c18-be93-9b9656bd9ba9">
+        <con:settings/>
+        <con:config>
+          <dataSourceStep>DataSource</dataSourceStep>
+          <targetStep>Login</targetStep>
+          <discardResults>false</discardResults>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="VirtRunnerTestStep" name="StopService" id="e00b508f-cc8f-4c5d-a30f-98d656cd87a3">
+        <con:settings/>
+        <con:config>
+          <url>localhost</url>
+          <server>EcommerceVirt</server>
+          <action>stop</action>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+      <con:breakPoints>
+        <con:testStepId>f0c47a2d-6317-4aff-ae84-4c4f62b41c66</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:breakPoints>
+        <con:testStepId>70cd03a4-55c6-4c18-be93-9b9656bd9ba9</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:breakPoints>
+        <con:testStepId>3e086f11-87bf-4f31-94e7-80f81995ddc8</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+    </con:testCase>
+    <con:properties/>
+    <con:reportParameters/>
+  </con:testSuite>
+  <con:restMockService port="8084" path="/" host="localhost" name="EcommerceVirt" routeModeEnabled="false" id="d81c4755-073b-46ab-aa30-a6df021d4d89">
+    <con:settings>
+      <con:setting id="2a6dfe00-ebf7-44f2-8b96-64c69a5b5ed4fileName">RESTMockService</con:setting>
+    </con:settings>
+    <con:properties/>
+    <con:constraints>
+      <con:congestion>0</con:congestion>
+      <con:inputBandwidth>-1</con:inputBandwidth>
+      <con:outputBandwidth>-1</con:outputBandwidth>
+      <con:maxThreadPoolCapacity>2000</con:maxThreadPoolCapacity>
+      <con:coreThreadPoolCapacity>5</con:coreThreadPoolCapacity>
+      <con:minLatency>0</con:minLatency>
+      <con:minApplicationDelay>0</con:minApplicationDelay>
+      <con:virtError>
+        <con:code>200</con:code>
+        <con:start>0</con:start>
+        <con:endless>true</con:endless>
+      </con:virtError>
+    </con:constraints>
+    <con:dataSources></con:dataSources>
+    <con:headerValidator type="NONE"/>
+    <con:restMockAction name="/test" method="GET" resourcePath="/test" id="85ae84c1-0d58-4bad-a82d-ea8499dc51cc">
+      <con:settings>
+        <con:setting id="b6e40973-6e49-41a5-83fb-684a88a333defileName">%2Ftest</con:setting>
+      </con:settings>
+      <con:defaultResponse>Response 1</con:defaultResponse>
+      <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+      <con:dispatchConfig/>
+      <con:dispatchXPath/>
+      <con:routeScript/>
+      <con:response name="Response 1" id="f1fe4dac-6928-4995-886a-6e1ce1622228" httpResponseStatus="200" mediaType="application/json" dataSource="" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200025a000a636f6d707265737365645b0004646174617400025b4278700070">
+        <con:settings/>
+        <con:responseContent>{ "Hello" : "Temil" }</con:responseContent>
+      </con:response>
+    </con:restMockAction>
+    <con:restMockAction name="buy" method="GET" resourcePath="/buy" id="3436b671-55f7-47d8-85d7-0ccdca7da492">
+      <con:settings>
+        <con:setting id="ac8250b4-a453-4acb-ace2-9cb35ecec996fileName">buy</con:setting>
+      </con:settings>
+      <con:defaultResponse>Item 1 Response</con:defaultResponse>
+      <con:dispatchStyle>SCRIPT</con:dispatchStyle>
+      <con:dispatchConfig/>
+      <con:dispatchPath>def queryString = mockRequest.getRequest().getQueryString()
+
+String[] fields = queryString.split("&amp;");
+String[] kv;
+
+HashMap&lt;String, String> params = new HashMap&lt;String, String>()
+for (int i = 0; i &lt; fields.length; ++i){
+    kv = fields[i].split("=");
+    if (2 == kv.length)
+     params.put(kv[0], kv[1]); 
+}
+
+def buystring = URLDecoder.decode(params.get("buystring"), "UTF-8")
+
+if (buystring == "all") 
+ return "WildCard Response"
+else if (buystring == "Item 1") 
+ return "Item 1 Response"
+else if (buystring == "Item 2") 
+ return "Item 2 Response"
+else if (buystring == "Item 3") 
+ return "Item 3 Response"
+else if (buystring == "Item 4") 
+ return "Item 3 Response"
+else if (buystring == "Item 5") 
+ return "Item 5 Response"
+else
+return "Unknown Response" 
+	
+
+
+return "Search Response"</con:dispatchPath>
+      <con:dispatchXPath/>
+      <con:parameterDispatcherRuleContainer/>
+      <con:routeScript/>
+      <con:response name="Item 1 Response" id="435743a0-66d5-4e45-ad96-9ac0667ab133" httpResponseStatus="200" mediaType="application/json" dataSource="" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200025a000a636f6d707265737365645b0004646174617400025b4278700070">
+        <con:settings/>
+        <con:responseContent>{
+  "purchasestatus": {
+    "id": "Item 1",
+    "stockStatus": "1 unit",
+    "expectedDelivery": "2000 years from now"
+  }
+}</con:responseContent>
+      </con:response>
+      <con:response name="Item 2 Response" id="e5a82d91-8f5f-456f-9a0b-c12726357724" httpResponseStatus="200" mediaType="application/json" dataSource="" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200025a000a636f6d707265737365645b0004646174617400025b4278700070">
+        <con:settings/>
+        <con:responseContent>{
+  "purchasestatus": {
+    "id": "Item 2",
+    "stockStatus": "10 000 boxes",
+    "expectedDelivery": "1 week"
+  }
+}</con:responseContent>
+      </con:response>
+      <con:response name="Item 3 Response" id="e4b5414a-58fc-4d37-84e8-9fe3b3fc0274" httpResponseStatus="200" mediaType="application/json" dataSource="" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200025a000a636f6d707265737365645b0004646174617400025b4278700070">
+        <con:settings/>
+        <con:responseContent>{
+  "purchasestatus": {
+    "id": "Item 3",
+    "stockStatus": "4 towels",
+    "expectedDelivery": "Any day now..."
+  }
+}</con:responseContent>
+      </con:response>
+      <con:response name="Item 4 Response" id="c3204592-f25f-4b75-a3db-7d5b5aa31ee9" httpResponseStatus="200" mediaType="application/json" dataSource="">
+        <con:settings/>
+        <con:responseContent>{
+  "purchasestatus": {
+    "id": "Item 4",
+    "stockStatus": "1 unit",
+    "expectedDelivery": "In the near future."
+  }
+}</con:responseContent>
+      </con:response>
+      <con:response name="Item 5 Response" id="e6f6a74b-589b-497d-b47e-56de6f73084c" httpResponseStatus="200" mediaType="application/json" dataSource="">
+        <con:settings/>
+        <con:responseContent>{
+  "purchasestatus": {
+    "id": "Item 5",
+    "stockStatus": "1 license",
+    "expectedDelivery": "You should already have it."
+  }
+}</con:responseContent>
+      </con:response>
+      <con:response name="Invalid Session Id Fault" id="8c79d713-f6ca-4aa2-bf80-a33114c1dde4" httpResponseStatus="401" dataSource="">
+        <con:settings/>
+        <con:responseContent>{ "Client" : "Invalid Session Id" }</con:responseContent>
+      </con:response>
+      <con:response name="Unknown Response" id="42d0f377-fb53-4440-a1aa-996930e1c9b4" httpResponseStatus="501" mediaType="application/json" dataSource="">
+        <con:settings/>
+        <con:responseContent/>
+      </con:response>
+      <con:response name="WildCard Response" id="6c2cb4e5-d8ba-4336-9f0a-13e4049bb490" httpResponseStatus="200" mediaType="application/json" dataSource="">
+        <con:settings/>
+        <con:responseContent>{
+  "result": {
+    "item": [
+      {
+        "id": "1",
+        "description": "One handy protocol droid.",
+        "price": "1"
+      },
+      {
+        "id": "2",
+        "description": "Item nr 2",
+        "price": "2"
+      },
+      {
+        "id": "3",
+        "description": "Item nr 3",
+        "price": "3"
+      },
+      {
+        "id": "4",
+        "description": "${item4description}",
+        "price": "4"
+      },
+      {
+        "id": "5",
+        "description": "Item nr 5",
+        "price": "5"
+      }
+    ]
+  }
+}</con:responseContent>
+      </con:response>
+    </con:restMockAction>
+    <con:restMockAction name="login" method="GET" resourcePath="/login" id="4077dc9c-a527-48c0-95c5-60e8836de5f7">
+      <con:settings>
+        <con:setting id="82d0d51b-1cc5-4a16-835e-f1da0547efbdfileName">login</con:setting>
+      </con:settings>
+      <con:defaultResponse>OK Response</con:defaultResponse>
+      <con:dispatchStyle>SCRIPT</con:dispatchStyle>
+      <con:dispatchConfig/>
+      <con:dispatchPath>def queryString = mockRequest.getRequest().getQueryString()
+
+String[] fields = queryString.split("&amp;");
+String[] kv;
+
+HashMap&lt;String, String> params = new HashMap&lt;String, String>()
+for (int i = 0; i &lt; fields.length; ++i){
+    kv = fields[i].split("=");
+    if (2 == kv.length)
+     params.put(kv[0], kv[1]); 
+}
+
+def username = params.get("username")
+def password = params.get("password")
+def sum = username + password
+
+// validate
+//if( sum.length() > 25 || sum.length() &lt; 10 || !username.startsWith("Login") || !password.endsWith( "123" ))
+// return "Invalid Login Fault"
+
+//if( context.hasProperty( sum ))
+// return "Already Logged In Fault"
+
+// seems ok
+def sessionid = String.valueOf( Math.random() ).substring( 2 )
+
+context.setProperty( sum, sessionid )
+context.setProperty( sessionid, sum )
+
+requestContext.sessionid = sessionid
+return "Ok Response"</con:dispatchPath>
+      <con:dispatchXPath/>
+      <con:parameterDispatcherRuleContainer/>
+      <con:routeScript/>
+      <con:response name="OK Response" id="161c44cd-4fd1-4ac7-8109-5ea3359c43e8" httpResponseStatus="200" mediaType="application/json" dataSource="">
+        <con:settings/>
+        <con:responseContent>{ "sessionid" : "${sessionid}" }</con:responseContent>
+      </con:response>
+      <con:response name="Invalid Login Fault" id="de55d3a8-639d-4d19-87f8-6f0d1c4de687" httpResponseStatus="401" mediaType="application/json" dataSource="">
+        <con:settings/>
+        <con:responseContent>{"Invalid Login" : "The login credentials are invalid&lt;/sam:loginFault" }</con:responseContent>
+      </con:response>
+      <con:response name="Already Logged In Fault" id="a2f5d1f6-ca6b-45b1-b0ee-89faa0c8d89a" httpResponseStatus="401" mediaType="application/json" dataSource="">
+        <con:settings/>
+        <con:responseContent>{ "Already Logged In" : "The specified credentials are already logged in" }</con:responseContent>
+      </con:response>
+    </con:restMockAction>
+    <con:restMockAction name="logout" method="GET" resourcePath="/logout" id="9d18978b-2c80-4d62-928a-b052e23e798c">
+      <con:settings>
+        <con:setting id="22685409-faf3-4411-8195-d31f6ef6c43efileName">logout</con:setting>
+      </con:settings>
+      <con:defaultResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">OK Response</con:defaultResponse>
+      <con:dispatchStyle>SCRIPT</con:dispatchStyle>
+      <con:dispatchConfig/>
+      <con:dispatchPath>def queryString = mockRequest.getRequest().getQueryString()
+
+String[] fields = queryString.split("&amp;");
+String[] kv;
+
+HashMap&lt;String, String> params = new HashMap&lt;String, String>()
+for (int i = 0; i &lt; fields.length; ++i){
+    kv = fields[i].split("=");
+    if (2 == kv.length)
+     params.put(kv[0], kv[1]); 
+}
+
+def sessionid = params.get("sessionid")
+
+// check
+if( !context.hasProperty( sessionid ))
+ return "Invalid Session Id Fault"
+
+// logout
+context.removeProperty( context.getProperty( sessionid ))
+context.removeProperty( sessionid )
+requestContext.sessioninfo = "OK"
+
+return "Ok Response"</con:dispatchPath>
+      <con:dispatchXPath/>
+      <con:parameterDispatcherRuleContainer/>
+      <con:routeScript/>
+      <con:response name="OK Response" id="b2d9446b-467c-443a-a237-565359fcf98c" httpResponseStatus="200" mediaType="application/json" dataSource="">
+        <con:settings/>
+        <con:responseContent>{"Successfully logged out session" : "${sessioninfo}"}</con:responseContent>
+      </con:response>
+      <con:response name="Invalid Session Id Fault" id="98df60e4-b633-4a68-b439-32d1bda9a479" httpResponseStatus="404" mediaType="application/json" dataSource="">
+        <con:settings/>
+        <con:responseContent>{"Failed" : "Invalid Session Id"}</con:responseContent>
+      </con:response>
+    </con:restMockAction>
+    <con:restMockAction name="search" method="GET" resourcePath="/search" id="726d9607-d507-4c87-930f-ed674247a767">
+      <con:settings>
+        <con:setting id="92956b11-db13-4f2a-90f3-f11bc6a1950bfileName">search</con:setting>
+      </con:settings>
+      <con:defaultResponse>Search Response</con:defaultResponse>
+      <con:dispatchStyle>SCRIPT</con:dispatchStyle>
+      <con:dispatchConfig/>
+      <con:dispatchPath>import java.net.URLDecoder;
+def queryString = mockRequest.getRequest().getQueryString()
+
+String[] fields = queryString.split("&amp;");
+String[] kv;
+
+HashMap&lt;String, String> params = new HashMap&lt;String, String>()
+for (int i = 0; i &lt; fields.length; ++i){
+    kv = fields[i].split("=");
+    if (2 == kv.length)
+     params.put(kv[0], kv[1]); 
+}
+
+def sessionid = params.get("sessionid")
+
+// check
+if( !context.hasProperty( sessionid ))
+ return "Invalid Session Id Fault"
+
+def searchstring = URLDecoder.decode(params.get("searchstring"), "UTF-8")
+
+if (searchstring == "all") 
+ return "WildCard Response"
+else if (searchstring == "Item 1") 
+ return "Item 1 Response"
+else if (searchstring == "Item 2") 
+ return "Item 2 Response"
+else if (searchstring == "Item 3") 
+ return "Item 3 Response"
+else if (searchstring == "Item 4") 
+ return "Item 3 Response"
+else if (searchstring == "Item 5") 
+ return "Item 5 Response"
+else
+return "Unknown Response" 
+	
+
+
+return "Search Response"</con:dispatchPath>
+      <con:dispatchXPath/>
+      <con:parameterDispatcherRuleContainer/>
+      <con:routeScript/>
+      <con:response name="Search Response" id="41e68c78-6373-4c24-aaf9-80d73863f033" httpResponseStatus="200" mediaType="application/json" dataSource="">
+        <con:settings/>
+        <con:responseContent>{
+  "result": {
+    "item": [
+      {
+        "id": "1",
+        "description": "One handy protocol droid.",
+        "price": "1"
+      },
+      {
+        "id": "2",
+        "description": "Item nr 2",
+        "price": "2"
+      },
+      {
+        "id": "3",
+        "description": "Item nr 3",
+        "price": "3"
+      },
+      {
+        "id": "4",
+        "description": "${item4description}",
+        "price": "4"
+      },
+      {
+        "id": "5",
+        "description": "Item nr 5",
+        "price": "5"
+      }
+    ]
+  }
+}</con:responseContent>
+      </con:response>
+      <con:response name="Invalid Session Id Fault" id="a0e3d208-12e2-4cc8-af24-bd1b7e9777be" httpResponseStatus="200" dataSource="">
+        <con:settings/>
+        <con:responseContent>{"Failed" : "Invalid Session Id"}</con:responseContent>
+      </con:response>
+      <con:response name="Item 1 Response" id="839b1eb8-84cb-4eb0-b460-fc9314814277" httpResponseStatus="200" mediaType="application/json" dataSource="">
+        <con:settings/>
+        <con:responseContent>{
+  "result": {
+    "item": {
+      "id": "Item 1",
+      "description": "One handy protocol droid. This droid is fluent in over six million forms of communication and has a lovely golden color. Built by an enthusiast. Mindwiped only once. Can be carried on your back.",
+      "price": "1"
+    }
+  }
+}</con:responseContent>
+      </con:response>
+      <con:response name="Item 2 Response" id="39d62289-cea0-47b5-ad53-def905c06b2a" httpResponseStatus="200" mediaType="application/json" dataSource="">
+        <con:settings/>
+        <con:responseContent>{
+  "result": {
+    "item": {
+      "id": "Item 2",
+      "description": "Box of chocolate with several popular items. Covered in Glucose. Recommended safety distance when eating Spring Surprise, 10 feet.",
+      "price": "1.99"
+    }
+  }
+}</con:responseContent>
+      </con:response>
+      <con:response name="Item 3 Response" id="1e1dbe4e-6c31-44df-b320-cb413dd95c48" httpResponseStatus="200" mediaType="application/json" dataSource="">
+        <con:settings/>
+        <con:responseContent>{
+  "result": {
+    "item": {
+      "id": "Item 3",
+      "description": "One towel. Massively useful thing. Impress the strags with this amazing cloth!",
+      "price": "2.99"
+    }
+  }
+}</con:responseContent>
+      </con:response>
+      <con:response name="Item 4 Response" id="d87ce05c-0341-4bd3-95c5-6de65f20f304" httpResponseStatus="200" mediaType="application/json" dataSource="">
+        <con:settings/>
+        <con:responseContent>{
+  "result": {
+    "item": {
+      "id": "Item 4",
+      "description": "Ono-Sendai 7. The newest cowboy tech from Hosaka. Break the ICE with this conversation piece.",
+      "price": "4.99"
+    }
+  }
+}</con:responseContent>
+      </con:response>
+      <con:response name="Item 5 Response" id="077ff1f8-4aa9-4c8b-80cd-d71c50b9f3ab" httpResponseStatus="200" mediaType="application/json" dataSource="">
+        <con:settings/>
+        <con:responseContent>{
+  "result": {
+    "item": {
+      "id": "Item 5",
+      "description": "Ready! API. All your needs for API readiness",
+      "price": "499"
+    }
+  }
+}</con:responseContent>
+      </con:response>
+      <con:response name="Search Fault Response" id="152c6680-6b2a-4be6-8462-f8b59e600d07" httpResponseStatus="200" mediaType="application/json" dataSource="">
+        <con:settings/>
+        <con:responseContent>{"No Result" : "The search returned no items"}</con:responseContent>
+      </con:response>
+      <con:response name="Unknown Response" id="b106d12c-2a28-4e2b-a31b-6fc69c392554" httpResponseStatus="200" mediaType="application/json" dataSource="">
+        <con:settings/>
+        <con:responseContent>{ "Client" : "Unknown Search String" }</con:responseContent>
+      </con:response>
+      <con:response name="WildCard Response" id="0ce69a22-569f-4b65-bc61-819b91368da4" httpResponseStatus="200" mediaType="application/json" dataSource="">
+        <con:settings/>
+        <con:responseContent>{
+  "result": {
+    "item": [
+      {
+        "id": "1",
+        "description": "One handy protocol droid.",
+        "price": "1"
+      },
+      {
+        "id": "2",
+        "description": "Item nr 2",
+        "price": "2"
+      },
+      {
+        "id": "3",
+        "description": "Item nr 3",
+        "price": "3"
+      },
+      {
+        "id": "4",
+        "description": "${item4description}",
+        "price": "4"
+      },
+      {
+        "id": "5",
+        "description": "Item nr 5",
+        "price": "5"
+      }
+    ]
+  }
+}</con:responseContent>
+      </con:response>
+    </con:restMockAction>
+  </con:restMockService>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:requirements/>
+  <con:properties/>
+  <con:wssContainer/>
+  <con:databaseConnectionContainer/>
+  <con:jmsConnectionContainer/>
+  <con:oAuth2ProfileContainer/>
+  <con:oAuth1ProfileContainer/>
+  <con:reporting>
+    <con:reportTemplates/>
+    <con:xmlTemplates/>
+    <con:xmlTemplates/>
+    <con:parameters/>
+    <con:parameters/>
+  </con:reporting>
+  <con:reporting/>
+  <con:eventHandlers type="RequestFilter.filterRequest" name="RequestFilter.filterRequest">
+    <con:script>// Sample event script to add custom HTTP header to all outgoing REST, SOAP and HTTP(S) calls
+// This code is often used for adding custom authentication to SoapUI Pro tests
+
+// If hardcoding the token, uncomment and change line 5
+// def token = '4567'
+
+// If your token is parameterized in Project level custom property, uncomment line 8
+// def token = request.parent.testCase.testSuite.project.getProperty('auth_token').getValue()
+
+// To modify all outgoing calls, remove comments from lines 11 to 16
+// def headers = request.requestHeaders
+// if (headers.containsKey('auth_token2') == false) {
+//   headers.put('auth_token2', token)
+//   request.requestHeaders = headers
+// }</con:script>
+  </con:eventHandlers>
+  <con:eventHandlers type="TestRunListener.afterStep" name="TestRunListener.afterStep">
+    <con:script>// Save all test step results into files
+// Change the directory path in line 5 to a location where you want to store details
+// then uncomment lines 5 to 10
+
+// filePath = 'C:\\tempOutputDirectory\\'
+// fos = new FileOutputStream(filePath + testStepResult.testStep.label + '.txt', true)
+// pw = new PrintWriter(fos)
+// testStepResult.writeTo(pw)
+// pw.close()
+// fos.close()</con:script>
+  </con:eventHandlers>
+  <con:authRepository/>
+  <con:tags/>
+</con:soapui-project>
