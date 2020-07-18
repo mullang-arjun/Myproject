@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project id="333b3b92-bc99-4628-afcb-90672b2992ea" created="2.7.0" activeEnvironment="Default environment" name="REST Sample Project" resourceRoot="" updated="2.8.0 2019-04-30T17:12:05Z" encryptionMode="Not encrypted" xmlns:con="http://eviware.com/soapui/config">
+<con:soapui-project id="333b3b92-bc99-4628-afcb-90672b2992ea" created="2.7.0" activeEnvironment="Default" name="REST Sample Project" resourceRoot="" updated="2.8.0 2019-04-30T17:12:05Z" encryptionMode="Not encrypted" abortOnError="false" runType="SEQUENTIAL" soapui-version="5.5.0" xmlns:con="http://eviware.com/soapui/config">
   <con:description>Sample Projects bases on a virtualized REST service. Please make sure that port 8084 is available on your local machine or you can update the virtual API under the serviceV tool to reflect an open port on your system. You will also have to update the ports on the tests to reflect
 the same ports on the virtual service.</con:description>
   <con:settings/>
@@ -231,7 +231,7 @@ the same ports on the virtual service.</con:description>
           <con:params/>
           <con:element>data</con:element>
         </con:representation>
-        <con:request name="Request 1" id="af9f46ad-d5ad-4c3c-bcde-e2f266c3dc2c" mediaType="application/json" postQueryString="false">
+        <con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="af9f46ad-d5ad-4c3c-bcde-e2f266c3dc2c" mediaType="application/json" postQueryString="false">
           <con:settings>
             <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Accept" value="application/json" xmlns="http://eviware.com/soapui/config"/></con:setting>
           </con:settings>
@@ -757,7 +757,7 @@ the same ports on the virtual service.</con:description>
     <con:settings/>
     <con:savedRecentRuns>1</con:savedRecentRuns>
     <con:runType>SEQUENTIAL</con:runType>
-    <con:testCase id="c3fbf613-f789-4fe0-a4e5-1757eba3ccc2" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Simple Login Call" searchProperties="true" timeout="0">
+    <con:testCase id="c3fbf613-f789-4fe0-a4e5-1757eba3ccc2" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Simple Login Call" searchProperties="true" timeout="0" maxResults="0">
       <con:description>Simple test can be used to show how easy it is to call a simple REST Service. You can have one or multiple REST endpoints that are not related to each other. This is commonly used when running integration tests.
 
 Steps:
@@ -769,14 +769,7 @@ Third Step turns off the virtual REST Service
 NOTE: If you would like to run the Login step without as a standalone step please turn on the virtual service under the ServiceV Tool</con:description>
       <con:settings/>
       <con:savedRecentRuns>1</con:savedRecentRuns>
-      <con:testStep type="VirtRunnerTestStep" name="StartService" id="49e7dd6f-1ad0-4104-8d0a-2bc166ee29e4">
-        <con:settings/>
-        <con:config>
-          <url>localhost</url>
-          <server>EcommerceVirt</server>
-          <action>run</action>
-        </con:config>
-      </con:testStep>
+      
       <con:testStep type="restrequest" name="Login" id="8c4c6e50-238e-4476-80dc-15d7b89fff4f">
         <con:settings/>
         <con:config service="Ecommerce" resourcePath="/login/" methodName="Login" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -839,14 +832,7 @@ NOTE: If you would like to run the Login step without as a standalone step pleas
           </con:restRequest>
         </con:config>
       </con:testStep>
-      <con:testStep type="VirtRunnerTestStep" name="StopService" id="e7ca5e17-6eda-4ec7-9628-3cc48017145d">
-        <con:settings/>
-        <con:config>
-          <url>localhost</url>
-          <server>EcommerceVirt</server>
-          <action>stop</action>
-        </con:config>
-      </con:testStep>
+      
       <con:properties/>
       <con:reportParameters/>
       <con:breakPoints>
@@ -855,7 +841,7 @@ NOTE: If you would like to run the Login step without as a standalone step pleas
         <con:properties/>
       </con:breakPoints>
     </con:testCase>
-    <con:testCase id="144505c6-b03d-43d1-8f24-71eb41db11e3" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Integration Test" searchProperties="true" timeout="0">
+    <con:testCase id="144505c6-b03d-43d1-8f24-71eb41db11e3" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Integration Test" searchProperties="true" timeout="0" maxResults="0">
       <con:description>Integration tests are supposed to show how APIs work in a real world scenarios, integrating APIs together as a user would use an application in a workflow. In the following example we Login, Search for an Item, Buy the Item and then logout. We have strung these steps together
 with some of the tools easy to use feature (GET DATA: See Documentation) which allows you to easily pass values from a response to the next request.
 
@@ -869,14 +855,7 @@ Fifth Step turns off the virtual REST Service
 NOTE: If you would like to run the Login step without as a standalone step please turn on the virtual service under the ServiceV Tool</con:description>
       <con:settings/>
       <con:savedRecentRuns>1</con:savedRecentRuns>
-      <con:testStep type="VirtRunnerTestStep" name="StartService" id="48307fa4-2bf6-4550-8266-238bd4e03e1c">
-        <con:settings/>
-        <con:config>
-          <url>localhost</url>
-          <server>EcommerceVirt</server>
-          <action>run</action>
-        </con:config>
-      </con:testStep>
+      
       <con:testStep type="restrequest" name="Login" id="d669030a-5e8c-4cf7-badd-9e8ae282be4b">
         <con:settings/>
         <con:config service="Ecommerce" resourcePath="/login/" methodName="Login" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -1126,14 +1105,7 @@ NOTE: If you would like to run the Login step without as a standalone step pleas
           </con:restRequest>
         </con:config>
       </con:testStep>
-      <con:testStep type="VirtRunnerTestStep" name="StopService" id="f1f7afe2-4ce3-4c98-8560-099b92921644">
-        <con:settings/>
-        <con:config>
-          <url>localhost</url>
-          <server>EcommerceVirt</server>
-          <action>stop</action>
-        </con:config>
-      </con:testStep>
+      
       <con:properties/>
       <con:reportParameters/>
       <con:breakPoints>
@@ -1142,7 +1114,7 @@ NOTE: If you would like to run the Login step without as a standalone step pleas
         <con:properties/>
       </con:breakPoints>
     </con:testCase>
-    <con:testCase id="040f09d4-dbf2-4816-9383-1b0a6085e75a" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="DataDriven REST Test" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword="" zephyrTestName="" zephyrTestId="">
+    <con:testCase id="040f09d4-dbf2-4816-9383-1b0a6085e75a" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="DataDriven REST Test" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword="" zephyrTestName="" zephyrTestId="" maxResults="0">
       <con:description>Datadriven test help test a scenario where the same or multiple APIs need to be tested with a large amount of data inputs, it can also be used to test a large dataset of expected results through assertions. These data inputs can be picked up from a Database, Excel spread sheet
 and many other data entities.
 
@@ -1156,14 +1128,7 @@ NOTE: If you would like to run the Login step without as a standalone step pleas
 NOTE: Check the TestCase transaction log after the execution of the test to view every single requet and response</con:description>
       <con:settings/>
       <con:savedRecentRuns>1</con:savedRecentRuns>
-      <con:testStep type="VirtRunnerTestStep" name="StartService" id="3e086f11-87bf-4f31-94e7-80f81995ddc8">
-        <con:settings/>
-        <con:config>
-          <url>localhost</url>
-          <server>EcommerceVirt</server>
-          <action>run</action>
-        </con:config>
-      </con:testStep>
+      
       <con:testStep type="datasource" name="DataSource" id="f0c47a2d-6317-4aff-ae84-4c4f62b41c66">
         <con:settings/>
         <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -1323,14 +1288,7 @@ NOTE: Check the TestCase transaction log after the execution of the test to view
           <discardResults>false</discardResults>
         </con:config>
       </con:testStep>
-      <con:testStep type="VirtRunnerTestStep" name="StopService" id="e00b508f-cc8f-4c5d-a30f-98d656cd87a3">
-        <con:settings/>
-        <con:config>
-          <url>localhost</url>
-          <server>EcommerceVirt</server>
-          <action>stop</action>
-        </con:config>
-      </con:testStep>
+      
       <con:properties/>
       <con:reportParameters/>
       <con:breakPoints>
@@ -1371,7 +1329,7 @@ NOTE: Check the TestCase transaction log after the execution of the test to view
         <con:endless>true</con:endless>
       </con:virtError>
     </con:constraints>
-    <con:dataSources></con:dataSources>
+    <con:dataSources/>
     <con:headerValidator type="NONE"/>
     <con:restMockAction name="/test" method="GET" resourcePath="/test" id="85ae84c1-0d58-4bad-a82d-ea8499dc51cc">
       <con:settings>
