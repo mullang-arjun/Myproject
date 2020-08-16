@@ -33,21 +33,7 @@ if ($validExitCodes -contains $exitCode) {
 Exit $exitCode
 Write-Verbose "$exitCode"
 
-if(test-path $ant_home_path) {
-Write-Output "Ant already installed..skipping the script"
-exit 0
-}
-else {
+
 choco install ant -y 
-}
 
-$exitCode = $LASTEXITCODE
-
-Write-Verbose "Exit code was $exitCode"
-$validExitCodes = @(0, 1605, 1614, 1641, 3010)
-if ($validExitCodes -contains $exitCode) {
-  Exit 0
-}
-Exit $exitCode
-Write-Verbose "$exitCode"
 
