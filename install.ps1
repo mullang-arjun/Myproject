@@ -1,6 +1,6 @@
 $choco_home_path = 'C:\ProgramData\chocolatey'
 $soapui_home_path = 'C:\Program Files\SmartBear\SoapUI-5.5.0'
-$ant_home_path = 'C:\temp\QA'
+$ant_home_path = 'C:\ProgramData\chocolatey\lib\ant'
 $destination = "https://chocolatey.org/install.ps1"
 $client = new-object System.Net.WebClient
 
@@ -25,7 +25,14 @@ $exitCode = $LASTEXITCODE
 
 Write-Verbose "$exitCode"
 
+if(test-path $soapui_home_path) {
+Write-Output "Soapui already installed..skipping the script"
+}
+else {
+choco install ant -y
+}
 
-choco install ant -y 
+$exitCode = $LASTEXITCODE
 
+Write-Verbose "$exitCode"
 
