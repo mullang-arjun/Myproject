@@ -18,7 +18,7 @@ if(test-path $soapui_home_path) {
 Write-Output "Soapui already installed..skipping the script"
 }
 else {
-choco install soapui --vesion 5.5.0 -y 
+choco install soapui -y 
 }
 
 $exitCode = $LASTEXITCODE
