@@ -1,4 +1,7 @@
-$destination = $Installdir
+$Installdir = 'C:\temp\QA'
+New-Item -Path $Installdir -ItemType Directory
+cd -Path $Installdir
+$destination = "https://chocolatey.org/install.ps1"
 $client = new-object System.Net.WebClient
 Set-ExecutionPolicy ByPass -Scope Process -Force; iex (($client).DownloadFile($destination))
 
