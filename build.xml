@@ -4,7 +4,7 @@
 	<property name="results.dir" value="${basedir}/test-results"/>
 	<property name="reports.dir" value="${results.dir}/Reports"/>
 	<property name="html.dir" value="${reports.dir}/html"/>
-	<property name="soapui.project" value="${basedir}/>
+	<property name="soapui.project" value="${basedir}"/>
 	
    <target name="init" depends="clean">
 	    <mkdir dir="${results.dir}"/>
