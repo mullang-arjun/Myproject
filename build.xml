@@ -1,0 +1,34 @@
+<project basedir="." name="Exports"  default="all" >
+	<property environment="env"/>
+	<property file="build.properties"/>
+	<property name="results.dir" value="${basedir}/test-results"/>
+	<property name="reports.dir" value="${results.dir}/Reports"/>
+	<property name="html.dir" value="${reports.dir}/html"/>
+	<property name="soapui.project" value="${basedir}/>
+	
+   <target name="init" depends="clean">
+	    <mkdir dir="${results.dir}"/>
+    </target>
+	<target name="clean">
+        <delete dir="${results.dir}" />
+    </target>
+	
+    <target name="loadprop" if="${suite}" depends="init">
+      <echo>${suite}</echo>
+    </target>
+	
+	<target name="execute.project" depends="loadprop">
+     <exec dir="${env.SOAPUI_HOME}" executable="testrunner.bat">
+	    <arg line="-j -M -r -a -f${results.dir} -s ${suite} ${soapui.project}/*.xml"/>
+     </exec>
+  </target>
+  <target name="exportsreport" depends="execute.project">
+          <junitreport  todir="${reports.dir}">
+            <fileset dir="${results.dir}">
+               <include name="TEST-*.xml"/>
+			   </fileset>
+            <report format="noframes" todir="${html.dir}" styledir="${env.ANT_HOME}"></report>
+         </junitreport>
+   </target>
+   <target name="all" depends="clean,init,loadprop, exportsreport" />
+</project>
