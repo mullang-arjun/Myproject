@@ -4,7 +4,7 @@ $ant_home_path = 'C:\ProgramData\chocolatey\lib\ant'
 $destination = "https://chocolatey.org/install.ps1"
 $client = new-object System.Net.WebClient
 
-if(test-path $choco_home-path) {
+if(test-path -Path $choco_home-path) {
 Write-Output "choco already installed..skipping the script"
 }
 else {
@@ -14,7 +14,7 @@ Set-ExecutionPolicy ByPass -Scope Process -Force; iex (($client).DownloadString(
 $exitCode = $LASTEXITCODE
 Write-Verbose "$exitCode"
 
-if(test-path $soapui_home_path) {
+if(test-path -Path $soapui_home_path) {
 Write-Output "Soapui already installed..skipping the script"
 [Environment]::SetEnvironmentVariable("SOAPUI_HOME", $soapui_home_path)
 }
@@ -26,7 +26,7 @@ $exitCode = $LASTEXITCODE
 
 Write-Verbose "$exitCode"
 
-if(test-path $ant_home_path) {
+if(test-path -Path $ant_home_path) {
 Write-Output "Ant already installed..skipping the script"
 [Environment]::SetEnvironmentVariable("ANT_HOME", $ant_home_path)
 }
