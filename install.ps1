@@ -23,12 +23,6 @@ choco install soapui --vesion 5.5.0 -y
 
 $exitCode = $LASTEXITCODE
 
-Write-Verbose "Exit code was $exitCode"
-$validExitCodes = @(0, 1605, 1614, 1641, 3010)
-if ($validExitCodes -contains $exitCode) {
-  Exit 0
-}
-Exit $exitCode
 Write-Verbose "$exitCode"
 
 
