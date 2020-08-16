@@ -14,7 +14,7 @@
     </target>
 	
     <target name="loadprop" if="${suite}" depends="init">
-      <echo>${suite}</echo>
+      <echo>"${suite}"</echo>
     </target>
 	
 	<target name="execute.project" depends="loadprop">
