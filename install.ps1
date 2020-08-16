@@ -6,7 +6,6 @@ $client = new-object System.Net.WebClient
 
 if(test-path $choco_home-path) {
 Write-Output "choco already installed..skipping the script"
-exit 0
 }
 else {
 Set-ExecutionPolicy ByPass -Scope Process -Force; iex (($client).DownloadString($destination))
@@ -17,7 +16,6 @@ Write-Verbose "$exitCode"
 
 if(test-path $soapui_home_path) {
 Write-Output "Soapui already installed..skipping the script"
-exit 0
 }
 else {
 choco install soapui --vesion 5.5.0 -y 
