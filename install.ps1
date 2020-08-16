@@ -16,6 +16,7 @@ Write-Verbose "$exitCode"
 
 if(test-path $soapui_home_path) {
 Write-Output "Soapui already installed..skipping the script"
+[Environment]::SetEnvironmentVariable("SOAPUI_HOME", $soapui_home_path)
 }
 else {
 choco install soapui --force --version 5.5.0 -y
@@ -27,6 +28,7 @@ Write-Verbose "$exitCode"
 
 if(test-path $ant_home_path) {
 Write-Output "Ant already installed..skipping the script"
+[Environment]::SetEnvironmentVariable("ANT_HOME", $ant_home_path)
 }
 else {
 choco install ant -y
