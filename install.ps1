@@ -25,8 +25,8 @@ $exitCode = $LASTEXITCODE
 
 Write-Verbose "$exitCode"
 
-if(test-path $soapui_home_path) {
-Write-Output "Soapui already installed..skipping the script"
+if(test-path $ant_home_path) {
+Write-Output "Ant already installed..skipping the script"
 }
 else {
 choco install ant -y
