@@ -18,7 +18,7 @@
     </target>
 	
 	<target name="execute.project" depends="loadprop">
-     <exec dir="${env.SOAPUI_HOME}" executable="testrunner.bat">
+     <exec dir="${env.Path}" executable="testrunner.bat">
 	    <arg line="-j -M -r -a -f${results.dir} -s ${suite} ${soapui.project}/*.xml"/>
      </exec>
   </target>
@@ -27,7 +27,7 @@
             <fileset dir="${results.dir}">
                <include name="TEST-*.xml"/>
 			   </fileset>
-            <report format="noframes" todir="${html.dir}" styledir="${env.ANT_HOME}"></report>
+            <report format="noframes" todir="${html.dir}" styledir="${env.Path}"></report>
          </junitreport>
    </target>
    <target name="all" depends="clean,init,loadprop, exportsreport" />
