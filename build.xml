@@ -25,7 +25,7 @@
   <target name="execute.project" depends="init">
          
     <exec dir="${env.SOAPUI_HOME}" executable="testrunner.bat">
-      <arg line="-raj -f${results.dir} -s ${suite} ${soapui.project}/${project.name}" />
+      <arg line="-raj -f${results.dir} -s ${env.suite} ${soapui.project}/${env.project.name}" />
            
     </exec>
      
