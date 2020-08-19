@@ -1,50 +1,64 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project basedir="." default="all" name="Exports">
-  <property environment="env" />
-  <property file="${basedir}/build.properties" />
-  <property name="results.dir" value="${basedir}/test-results" />
-  <property name="reports.dir" value="${results.dir}/Reports" />
-  <property name="html.dir" value="${reports.dir}/html" />
-  <property name="soapui.project" location="${basedir}" />
-  <target name="init" depends="clean">
-    <mkdir dir="${results.dir}" />
-	<mkdir dir="${reports.dir}" />
-       
-  </target>
-  <target name="clean">
-       
-    <delete dir="${reports.dir}" />
-	<delete dir="${results.dir}" />
-       
-  </target>
-  <target name="loadprop" if="${suite}" depends="init">
-         
-    <echo>${suite}</echo>
-       
-  </target>
-  <target name="execute.project" depends="init">
-         
-    <exec dir="${env.SOAPUI_HOME}" executable="testrunner.bat">
-      <arg line="-raj -f${results.dir} -s ${env.suite} ${soapui.project}/${env.project.name}" />
-           
-    </exec>
-     
-  </target>
-   
-  <target name="exportsreport" depends="execute.project">
-         
-    <junitreport todir="${reports.dir}">
-           
-      <fileset dir="${results.dir}">
-               
-        <include name="TEST-*.xml" />
-      </fileset>
-           
-      <report format="noframes" todir="${html.dir}" styledir="C:/ProgramData/chocolatey/lib/ant/apache-ant-1.10.5/etc" />
-           
-    </junitreport>
-       
-  </target>
-     
-  <target name="all" depends="clean,init,loadprop, exportsreport" />
+<project name="WS-Test"  default="test" >
+	<property file="build.properties"/>
+	<property name="test.dir" value="test-results"/>
+	<property name="project.dir" location="project"/>
+	
+	<target name="clean">
+       <delete dir="${test.dir}"/>
+    </target>
+
+	<target name="init">
+      <mkdir dir="${test.dir}"/>
+    </target>
+
+	<target name="test-with-properties" depends="init">
+		<java classname="com.eviware.soapui.tools.SoapUITestCaseRunner" errorproperty="tests-failed" fork="yes" dir="${test.dir}">
+		  <arg line="-j -M -r -a -f${basedir}/${test.dir}"/>
+		  <arg value="-e${host.url}"/>
+		  <arg value="-s${soapui.testsuite}"/>
+		  <arg value="${project.dir}\${soapui.project}"/>
+		  <classpath>
+			<fileset dir="lib" includes="*.jar"/>
+		  </classpath>
+		</java>
+	</target>
+	
+	<target name="test" depends="init">
+		<java classname="com.eviware.soapui.tools.SoapUITestCaseRunner" errorproperty="tests-failed" fork="yes" dir="${test.dir}">
+		  <arg line="-j -M -r -a -f${basedir}/${test.dir}"/>
+		  <arg value="${project.dir}/${soapui.project}"/>
+		  <classpath>
+			<fileset dir="lib" includes="*.jar"/>
+		  </classpath>
+		</java>
+	</target>
+	
+	<target name="test-single-project" depends="init">
+		<antcall target="run-single-test">
+		  <param name="project" value="${project.dir}/${soapui.project}"/>
+		</antcall>
+	</target>
+	
+	<target name="run-single-test">
+	    <java classname="com.eviware.soapui.tools.SoapUITestCaseRunner" errorproperty="tests-failed" fork="yes" dir="${test.dir}">
+		  <arg line="-j -M -r -a -f${basedir}/${test.dir}"/>
+		  <arg value="${project}"/>
+		  <classpath>
+			<fileset dir="lib" includes="*.jar"/>
+		  </classpath>
+		</java>
+	</target>
+	
+	
+	<target name="report">
+		<junitreport todir="${test.dir}">
+		  <fileset dir="${test.dir}">
+			<include name="TEST-*.xml"/>
+		  </fileset>
+		  <report format="frames" todir="${test.dir}/reports/html"/>
+		</junitreport>
+    </target>
+	
+	
 </project>
+

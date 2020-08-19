@@ -1,0 +1,10 @@
+2020-08-19 17:20:39,487 WARN  [SoapUI] Missing folder [D:\Soapui\soapui-ant-master\test-results\ext] for external libraries
+2020-08-19 17:20:39,662 INFO  [DefaultSoapUICore] initialized soapui-settings from [C:\Users\BhagyaJyothi\soapui-settings.xml]
+2020-08-19 17:20:40,948 INFO  [WsdlProject] Loaded project from [file:/D:/Soapui/soapui-ant-master/project/REST-Project-1-soapui-project.xml]
+2020-08-19 17:20:41,591 INFO  [SoapUITestCaseRunner] Running SoapUI tests in project [REST Project 1]
+2020-08-19 17:20:41,592 INFO  [SoapUITestCaseRunner] Running TestSuite [SmapleTestSuite], runType = SEQUENTIAL
+2020-08-19 17:20:41,659 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [Test1 TestCase]
+2020-08-19 17:20:41,726 INFO  [SoapUITestCaseRunner] running step [Request 1]
+2020-08-19 17:20:43,269 INFO  [SoapUITestCaseRunner] Assertion [Valid HTTP Status Codes] has status VALID
+2020-08-19 17:20:43,277 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [Test1 TestCase], time taken: 1225ms, status: FINISHED
+2020-08-19 17:20:43,284 INFO  [SoapUITestCaseRunner] TestSuite [SmapleTestSuite] finished with status [FINISHED] in 1688ms

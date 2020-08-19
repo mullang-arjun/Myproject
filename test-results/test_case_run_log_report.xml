@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCaseRunLog testCase="Test1 TestCase" timeTaken="1225" status="FINISHED" timeStamp="2020-08-19 17:20:41" xmlns:con="http://eviware.com/soapui/config"><con:testCaseRunLogTestStep name="Request 1" timeTaken="1225" status="OK" timestamp="2020-08-19 17:20:43" endpoint="https://jsonplaceholder.typicode.com/posts?accept=%24%7Baccept%7D" httpStatus="201" contentLength="294" readTime="19" totalTime="1196" dnsTime="0" connectTime="265" timeToFirstByte="912" httpMethod="POST" ipAddress="172.64.133.18"/></con:testCaseRunLog>
