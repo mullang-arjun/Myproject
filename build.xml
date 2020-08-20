@@ -2,7 +2,7 @@
 	<property file="build.properties"/>
 	<property name="test.dir" value="test-results"/>
 	<property name="project.dir" location="project"/>
-	<property name="report.title" value="Exports Automation Results"
+	<property name="report.title" value="Exports Automation Results"/>
 	
 	<target name="clean">
        <delete dir="${test.dir}"/>
